@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>exercice 1</title>
+	<meta charset="utf-8">
+	<script src="jquery-2.2.4.js"></script>
+</head>
+<body>
+	
+		<form>
+    		<button type="button" name="button" id="clique-moi" >Clique-moi !</button>
+  		</form>
+
+ 		<p>Tu as cliqué <span id="count"></span> fois sur le bouton !</p>
+
+
+
+
+ <script>
+ 	
+	var x = 0; 								//on crée la variable x qui va contenir le nombre de click
+
+	$("#clique-moi").click(function(){     // au clique du bouton "clique moi"
+		x++;                              //on ajoute +1 à la valeur de la variable x
+		$("#count").text(x);             //on affiche en texte la valeur de la variable
+	});
+
+
+ </script>
+</body>
+</html>
